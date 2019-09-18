@@ -31,7 +31,7 @@ class Query(object):
             ## Get the rate of bitcoin, it's quite deeply nested in the api
             rate = content['bpi']['USD']['rate']
 
-            ##Convert the returned string value to float, by first substiting for
+            ##Convert the returned string value to float, by first substituting for
             ##extra spaces that might cause irregularities.
             rate = float(rate.replace(',',''))
 
