@@ -1,6 +1,11 @@
-from django.http import HttpResponse
+from django.shortcuts import render
+# from django.http import HttpResponse
+from datetime import date
+import calendar
+from calendar import HTMLCalendar
 
 
 def index(request):
-    return HttpResponse("I used 'typeC' instead of 'type'. Hello, I couldn't use 'type' as the name of one of the arguments in calculatePrice graph because it is a keyword, and i wasn't allowed, so i used 'typeC'. ")
+  
+    return render(request, 'challenge/base.html')
     

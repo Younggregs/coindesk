@@ -8,5 +8,5 @@ from .schema import schema
 urlpatterns = [
     url(r'^', include('challenge.urls')),
     url(r'^admin/', admin.site.urls),
-    url(r'^graphql/', GraphQLView.as_view(graphiql=True, schema=schema)),
+    url(r'^graphiql/', GraphQLView.as_view(graphiql=True, schema=schema)),
 ]
